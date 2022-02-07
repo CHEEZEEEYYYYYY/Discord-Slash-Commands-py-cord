@@ -1,6 +1,7 @@
 import discord #import your packages
 from discord.ext import commands
 from discord_slash import SlashCommand 
+import aiohttp
 
 intents = discord.Intents.all() #make sure that all Priveleged Gateway Intents (Presence Intent, Server Member Intents, and Message Contents Intent) are on to use this line
 client = commands.Bot(command_prefix="?", intents=intents)
